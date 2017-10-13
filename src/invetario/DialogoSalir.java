@@ -31,6 +31,11 @@ public class DialogoSalir extends javax.swing.JInternalFrame {
         SIButton1 = new javax.swing.JButton();
         NoButton2 = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+
         jLabel1.setText("Esta seguro que decea Salir?");
 
         SIButton1.setText("Si");
