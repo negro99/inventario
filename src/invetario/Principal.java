@@ -19,6 +19,7 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -195,6 +196,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_saveAsMenuItemActionPerformed
 
     private void RegistrarMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarMenuItem1ActionPerformed
+
         RegistrarProducto form = new RegistrarProducto();
         desktopPane.add(form);
 
@@ -209,19 +211,6 @@ public class Principal extends javax.swing.JFrame {
         form.setVisible(true);
         this.setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
-        
-        RegistrarProducto ds = new RegistrarProducto();
-        
-        this.desktopPane.add("RegistrarProducto", ds);
-        Dimension d1 = this.desktopPane.getSize();
-        Dimension d2 = ds.getSize();
-         
-        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
-        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
-        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
-        ds.setVisible(true);
         
     }//GEN-LAST:event_RegistrarMenuItem1ActionPerformed
 
