@@ -28,22 +28,22 @@ public class DialogoSalir extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        SIButton1 = new javax.swing.JButton();
+        NoButton2 = new javax.swing.JButton();
 
         jLabel1.setText("Esta seguro que decea Salir?");
 
-        jButton1.setText("Si");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        SIButton1.setText("Si");
+        SIButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                SIButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("No");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        NoButton2.setText("No");
+        NoButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                NoButton2ActionPerformed(evt);
             }
         });
 
@@ -58,9 +58,9 @@ public class DialogoSalir extends javax.swing.JInternalFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(100, 100, 100)
-                        .addComponent(jButton1)
+                        .addComponent(SIButton1)
                         .addGap(31, 31, 31)
-                        .addComponent(jButton2)))
+                        .addComponent(NoButton2)))
                 .addContainerGap(92, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -70,21 +70,21 @@ public class DialogoSalir extends javax.swing.JInternalFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(SIButton1)
+                    .addComponent(NoButton2))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 // boton no
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void NoButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NoButton2ActionPerformed
         doClose(RET_CANCEL);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_NoButton2ActionPerformed
 //boton Si
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void SIButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SIButton1ActionPerformed
         doClose(RET_OK);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_SIButton1ActionPerformed
     
     private void doClose(int retStatus) {
         returnStatus = retStatus;
@@ -114,8 +114,8 @@ public class DialogoSalir extends javax.swing.JInternalFrame {
     private int returnStatus = RET_CANCEL;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton NoButton2;
+    private javax.swing.JButton SIButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 
