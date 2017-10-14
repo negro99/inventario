@@ -44,12 +44,11 @@ public class Principal extends javax.swing.JFrame {
         saveMenuItem = new javax.swing.JMenuItem();
         saveAsMenuItem = new javax.swing.JMenuItem();
         exitMenuItem = new javax.swing.JMenuItem();
-        editMenu = new javax.swing.JMenu();
-        copyMenuItem = new javax.swing.JMenuItem();
-        pasteMenuItem = new javax.swing.JMenuItem();
-        deleteMenuItem = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        editMenu = new javax.swing.JMenu();
         helpMenu = new javax.swing.JMenu();
         RegistrarMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -108,32 +107,40 @@ public class Principal extends javax.swing.JFrame {
 
         menuBar.add(fileMenu);
 
-        editMenu.setMnemonic('e');
-        editMenu.setText("Tiendas");
-
-        copyMenuItem.setMnemonic('y');
-        copyMenuItem.setText("Copy");
-        editMenu.add(copyMenuItem);
-
-        pasteMenuItem.setMnemonic('p');
-        pasteMenuItem.setText("Paste");
-        editMenu.add(pasteMenuItem);
-
-        deleteMenuItem.setMnemonic('d');
-        deleteMenuItem.setText("Delete");
-        editMenu.add(deleteMenuItem);
-
-        menuBar.add(editMenu);
-
         jMenu6.setText("Bodegas");
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Y, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItem1.setText("Inventario");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem1);
+
         menuBar.add(jMenu6);
 
         jMenu5.setText("Vendedores");
+
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItem3.setText("Lista");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem3);
+
         menuBar.add(jMenu5);
+
+        editMenu.setMnemonic('e');
+        editMenu.setText("Tiendas");
+        menuBar.add(editMenu);
 
         helpMenu.setMnemonic('h');
         helpMenu.setText("Producto");
 
+        RegistrarMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_MASK));
         RegistrarMenuItem1.setText("Registrar");
         RegistrarMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -195,9 +202,31 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_saveAsMenuItemActionPerformed
 
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     private void RegistrarMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarMenuItem1ActionPerformed
 
         RegistrarProducto ds = new RegistrarProducto();
+
+        this.desktopPane.add("RegistrarProducto", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+
+    }//GEN-LAST:event_RegistrarMenuItem1ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        Inventario ds = new Inventario();
         
         this.desktopPane.add("DialogoSalir", ds);
         Dimension d1 = this.desktopPane.getSize();
@@ -210,12 +239,23 @@ public class Principal extends javax.swing.JFrame {
         
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
-        
-    }//GEN-LAST:event_RegistrarMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        ListaUsuarios ds = new ListaUsuarios ();
+        
+        this.desktopPane.add("DialogoSalir", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+        
+        
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+       
+        
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,8 +295,6 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem RegistrarMenuItem1;
-    private javax.swing.JMenuItem copyMenuItem;
-    private javax.swing.JMenuItem deleteMenuItem;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenuItem exitMenuItem;
@@ -271,10 +309,11 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem openMenuItem;
-    private javax.swing.JMenuItem pasteMenuItem;
     private javax.swing.JMenuItem saveAsMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
