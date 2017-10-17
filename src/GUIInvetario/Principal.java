@@ -50,8 +50,9 @@ public class Principal extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
         helpMenu = new javax.swing.JMenu();
-        RegistrarMenuItem1 = new javax.swing.JMenuItem();
+        RegistrarP = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        ActualizarP = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
 
         jMenu1.setText("File");
@@ -140,14 +141,14 @@ public class Principal extends javax.swing.JFrame {
         helpMenu.setMnemonic('h');
         helpMenu.setText("Producto");
 
-        RegistrarMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_MASK));
-        RegistrarMenuItem1.setText("Registrar");
-        RegistrarMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        RegistrarP.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.ALT_MASK));
+        RegistrarP.setText("Registrar");
+        RegistrarP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RegistrarMenuItem1ActionPerformed(evt);
+                RegistrarPActionPerformed(evt);
             }
         });
-        helpMenu.add(RegistrarMenuItem1);
+        helpMenu.add(RegistrarP);
 
         jMenuItem2.setText("Lista");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -156,6 +157,14 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         helpMenu.add(jMenuItem2);
+
+        ActualizarP.setText("Actualizar");
+        ActualizarP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ActualizarPActionPerformed(evt);
+            }
+        });
+        helpMenu.add(ActualizarP);
 
         menuBar.add(helpMenu);
 
@@ -206,7 +215,7 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void RegistrarMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarMenuItem1ActionPerformed
+    private void RegistrarPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarPActionPerformed
 
         RegistrarProducto ds = new RegistrarProducto();
 
@@ -222,7 +231,7 @@ public class Principal extends javax.swing.JFrame {
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
 
-    }//GEN-LAST:event_RegistrarMenuItem1ActionPerformed
+    }//GEN-LAST:event_RegistrarPActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
@@ -256,6 +265,23 @@ public class Principal extends javax.swing.JFrame {
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void ActualizarPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ActualizarPActionPerformed
+        // TODO add your handling code here:
+        ActualizarProducto ds = new ActualizarProducto ();
+        
+        this.desktopPane.add("ActualizarProducto", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+        
+        
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+       
+        
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_ActualizarPActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,7 +320,8 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem RegistrarMenuItem1;
+    private javax.swing.JMenuItem ActualizarP;
+    private javax.swing.JMenuItem RegistrarP;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenuItem exitMenuItem;

@@ -39,6 +39,7 @@ package GUIInvetario;
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
+        setResizable(true);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
