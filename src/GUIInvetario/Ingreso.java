@@ -119,7 +119,7 @@ public class Ingreso extends javax.swing.JFrame {
       String passw=new String(jPasswordField1.getPassword());
       
       if(jTextField1.getText().equals(Usuario)&& passw.equals(Contraseña)){
-          Principal home =new Principal();
+          Admin home =new Admin();
           home.setVisible(true);
           
       }
