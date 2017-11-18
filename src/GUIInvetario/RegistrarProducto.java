@@ -63,6 +63,7 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
         jTextField_Stock_RegistrarProducto = new javax.swing.JTextField();
         jTextField_Categoria_RegistrarProducto = new javax.swing.JTextField();
         jTextField_Fecha_De_Vencimiento_RegistrarProducto = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         jToggleButton2.setText("Ayuda");
 
@@ -165,6 +166,13 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
 
         jTextField_Fecha_De_Vencimiento_RegistrarProducto.setText("jTextField24");
 
+        jButton1.setText("Registro");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -236,6 +244,8 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton_Guardar_Producto)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1)
                         .addGap(18, 18, 18)
                         .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -287,7 +297,8 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_Guardar_Producto))
+                    .addComponent(jButton_Guardar_Producto)
+                    .addComponent(jButton1))
                 .addGap(6, 6, 6))
         );
 
@@ -407,9 +418,16 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
 
     }//GEN-LAST:event_jButton_Guardar_ProductoActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Tabla_Productos l = new Tabla_Productos();
+        l.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Salir;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton_Ayuda_Ventana_Producto;
     private javax.swing.JButton jButton_Guardar_Producto;
     private javax.swing.JLabel jLabel1;
