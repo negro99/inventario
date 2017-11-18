@@ -37,32 +37,32 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         Salir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
         jButton_Ayuda_Ventana_Producto = new javax.swing.JButton();
         jButton_Guardar_Producto = new javax.swing.JButton();
+        jTextField_Codigo_EAN_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Nombre_Corto_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Nombre_Largo_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Descripcion_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Precio_Venta_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Precio_Compra_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Largo_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Ancho_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Alto_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Stock_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Categoria_RegistrarProducto = new javax.swing.JTextField();
+        jTextField_Fecha_De_Vencimiento_RegistrarProducto = new javax.swing.JTextField();
 
         jToggleButton2.setText("Ayuda");
 
@@ -98,27 +98,9 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
 
         jLabel2.setText("EAN:");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-
         jLabel3.setText("Nombre Corto:");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-
         jLabel4.setText("Nombre Largo:");
-
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
 
         jLabel5.setText("    Descripción: ");
 
@@ -126,43 +108,13 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
 
         jLabel7.setText("Ancho:");
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
-
         jLabel8.setText("   Alto:");
-
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
-            }
-        });
-
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
-            }
-        });
 
         jLabel9.setText("    Categorias:");
 
         jLabel10.setText("Precio Compra:");
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
-            }
-        });
-
         jLabel11.setText("Precio Venta:");
-
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
-            }
-        });
 
         jLabel12.setText("F. de Vencimiento:");
 
@@ -174,18 +126,6 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
         });
 
         jLabel1.setText(" Stock:");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
-            }
-        });
 
         jButton_Ayuda_Ventana_Producto.setText("AYUDA");
         jButton_Ayuda_Ventana_Producto.addActionListener(new java.awt.event.ActionListener() {
@@ -201,6 +141,30 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
             }
         });
 
+        jTextField_Codigo_EAN_RegistrarProducto.setText("jTextField13");
+
+        jTextField_Nombre_Corto_RegistrarProducto.setText("jTextField14");
+
+        jTextField_Nombre_Largo_RegistrarProducto.setText("jTextField15");
+
+        jTextField_Descripcion_RegistrarProducto.setText("jTextField16");
+
+        jTextField_Precio_Venta_RegistrarProducto.setText("jTextField17");
+
+        jTextField_Precio_Compra_RegistrarProducto.setText("jTextField18");
+
+        jTextField_Largo_RegistrarProducto.setText("jTextField19");
+
+        jTextField_Ancho_RegistrarProducto.setText("jTextField20");
+
+        jTextField_Alto_RegistrarProducto.setText("jTextField21");
+
+        jTextField_Stock_RegistrarProducto.setText("jTextField22");
+
+        jTextField_Categoria_RegistrarProducto.setText("jTextField23");
+
+        jTextField_Fecha_De_Vencimiento_RegistrarProducto.setText("jTextField24");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -213,62 +177,62 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel5)
-                            .addComponent(jLabel2))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel9))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(25, 25, 25)
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(16, 16, 16)
-                                        .addComponent(jLabel4)
-                                        .addGap(2, 2, 2)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(31, 31, 31)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(105, 105, 105)
+                                        .addComponent(jLabel12))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jTextField_Alto_RegistrarProducto)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField1)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
-                                .addComponent(jButton_Ayuda_Ventana_Producto))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel9)
+                                        .addComponent(jLabel10)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(16, 16, 16)
-                                .addComponent(jLabel10))
-                            .addComponent(jLabel12))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField_Stock_RegistrarProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
+                                    .addComponent(jTextField_Categoria_RegistrarProducto))
+                                .addGap(10, 10, 10)
                                 .addComponent(jLabel11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(jTextField_Fecha_De_Vencimiento_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTextField_Ancho_RegistrarProducto, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTextField_Codigo_EAN_RegistrarProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+                                            .addComponent(jTextField_Largo_RegistrarProducto))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addGap(45, 45, 45)
+                                                .addComponent(jLabel6)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField_Nombre_Corto_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(11, 11, 11)
+                                                .addComponent(jLabel7)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField_Nombre_Largo_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(16, 16, 16)
+                                                .addComponent(jLabel4)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField_Precio_Compra_RegistrarProducto)))
+                                        .addGap(23, 23, 23)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jTextField_Descripcion_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel1)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jTextField_Precio_Venta_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                                .addComponent(jButton_Ayuda_Ventana_Producto))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton_Guardar_Producto)
@@ -284,41 +248,41 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
                         .addGap(29, 29, 29)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTextField_Codigo_EAN_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_Nombre_Corto_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_Nombre_Largo_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_Descripcion_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton_Ayuda_Ventana_Producto)))
                 .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Precio_Venta_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Precio_Compra_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Largo_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                    .addComponent(jTextField_Ancho_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jTextField_Alto_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Stock_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Fecha_De_Vencimiento_RegistrarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTextField_Categoria_RegistrarProducto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -330,49 +294,9 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
-
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
-
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
-
     private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
        dispose();
     }//GEN-LAST:event_SalirActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
 
     private void jButton_Ayuda_Ventana_ProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Ayuda_Ventana_ProductoActionPerformed
        
@@ -380,85 +304,105 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
 
     private void jButton_Guardar_ProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Guardar_ProductoActionPerformed
 
-        if (jTextField_Codigo_EAN_Ventana_Producto.getText().length() == 0) {
+        if (jTextField_Codigo_EAN_RegistrarProducto.getText().length() == 0) {
             JOptionPane.showMessageDialog(null, "Debes ingresar un Codigo.");
-            jTextField_Codigo_EAN_Ventana_Producto.requestFocus();
+            jTextField_Codigo_EAN_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Nombre_Ventana_Producto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Nombre a la bodega.");
-            jTextField_Nombre_Ventana_Producto.requestFocus();
+        if (jTextField_Nombre_Corto_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar un Nombre Corto al producto.");
+            jTextField_Nombre_Corto_RegistrarProducto.requestFocus();
+            return;
+        }
+        if (jTextField_Nombre_Largo_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Nombre Largo.");
+            jTextField_Nombre_Largo_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Descripcion_Ventana_Producto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Tamaño.");
-            jTextField_Descripcion_Ventana_Producto.requestFocus();
+        if (jTextField_Descripcion_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar una Descripcion.");
+            jTextField_Descripcion_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Nombre_Corto_Ventana_Producto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Volumen.");
-            jTextField_Nombre_Corto_Ventana_Producto.requestFocus();
+        if (jTextField_Precio_Venta_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Precio Venta.");
+            jTextField_Precio_Venta_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Precio_Venta_Ventana_Producto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Ubicacion.");
-            jTextField_Precio_Venta_Ventana_Producto.requestFocus();
+        if (jTextField_Precio_Compra_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Precio Compra.");
+            jTextField_Precio_Compra_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Precio_Compra_Ventana_Producto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Gerente.");
-            jTextField_Precio_Compra_Ventana_Producto.requestFocus();
+        if (jTextField_Largo_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Largo del Producto.");
+            jTextField_Largo_RegistrarProducto.requestFocus();
             return;
         }
-
-        if (jTextField_Tamaño_Ventana_Producto.getText().length() == 0) {
+        if (jTextField_Ancho_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Ancho del Prodcuto.");
+            jTextField_Ancho_RegistrarProducto.requestFocus();
+            return;
+        }
+        if (jTextField_Alto_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Alto Del Producto.");
+            jTextField_Alto_RegistrarProducto.requestFocus();
+            return;
+        }
+        if (jTextField_Stock_RegistrarProducto.getText().length() == 0) {
             JOptionPane.showMessageDialog(null, "Debes ingresar un Bodeguero.");
-            jTextField_Tamaño_Ventana_Producto.requestFocus();
+            jTextField_Stock_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Tipo_De_Producto_Ventana_Producto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Gerente.");
-            jTextField_Tipo_De_Producto_Ventana_Producto.requestFocus();
+          if (jTextField_Categoria_RegistrarProducto.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingrese una categoria.");
+            jTextField_Categoria_RegistrarProducto.requestFocus();
             return;
         }
 
-        if (jTextField_Fecha_De_Vencimiento_Ventana_Producto.getText().length() == 0) {
+        if (jTextField_Fecha_De_Vencimiento_RegistrarProducto.getText().length() == 0) {
             JOptionPane.showMessageDialog(null, "Debes ingresar un Bodeguero.");
-            jTextField_Fecha_De_Vencimiento_Ventana_Producto.requestFocus();
+            jTextField_Fecha_De_Vencimiento_RegistrarProducto.requestFocus();
             return;
         } else {
-            JOptionPane.showMessageDialog(null, "No se modifico el Producto.");
+            JOptionPane.showMessageDialog(null, "Agregado con Exito.");
 
         }
 
-        String codigo_ean = jTextField_Codigo_EAN_Ventana_Producto.getText();
-        String nombre = jTextField_Nombre_Ventana_Producto.getText();
-        String descripcion = jTextField_Descripcion_Ventana_Producto.getText();
-        String nombre_corto = jTextField_Nombre_Corto_Ventana_Producto.getText();
-        String precio_venta = jTextField_Precio_Venta_Ventana_Producto.getText();
-        String precio_compra = jTextField_Precio_Compra_Ventana_Producto.getText();
-        String tamaño = jTextField_Tamaño_Ventana_Producto.getText();
-        String tipo_de_producto = jTextField_Tipo_De_Producto_Ventana_Producto.getText();
-        String fecha_de_vencimiento = jTextField_Fecha_De_Vencimiento_Ventana_Producto.getText();
+        String codigo_ean = jTextField_Codigo_EAN_RegistrarProducto.getText();
+        String nombre_corto = jTextField_Nombre_Corto_RegistrarProducto.getText();
+        String nombre_largo = jTextField_Nombre_Largo_RegistrarProducto.getText();
+        String descripcion = jTextField_Descripcion_RegistrarProducto.getText();
+        String precio_venta = jTextField_Precio_Venta_RegistrarProducto.getText();
+        String precio_compra = jTextField_Precio_Compra_RegistrarProducto.getText();
+        String largo = jTextField_Largo_RegistrarProducto.getText();
+        String ancho = jTextField_Ancho_RegistrarProducto.getText();
+        String alto = jTextField_Alto_RegistrarProducto.getText();
+        String stock = jTextField_Stock_RegistrarProducto.getText();
+        String categoria = jTextField_Categoria_RegistrarProducto.getText();
+        String fecha_de_vencimiento = jTextField_Fecha_De_Vencimiento_RegistrarProducto.getText();
 
-        Clase_Ventana_Producto clase = new Clase_Ventana_Producto(codigo_ean, nombre, descripcion,nombre_corto,precio_venta,precio_compra,tamaño,tipo_de_producto,fecha_de_vencimiento);
+        Registrar_Producto clase = new Registrar_Producto(codigo_ean, nombre_largo, nombre_corto,descripcion,precio_venta,precio_compra,largo,ancho,alto,stock,categoria,fecha_de_vencimiento);
         contenedor.add(clase);
 
-        jTextField_Codigo_EAN_Ventana_Producto.setText("");
-        jTextField_Nombre_Ventana_Producto.setText("");
-        jTextField_Descripcion_Ventana_Producto.setText("");
-        jTextField_Nombre_Corto_Ventana_Producto.setText("");
-        jTextField_Precio_Venta_Ventana_Producto.setText("");
-        jTextField_Precio_Compra_Ventana_Producto.setText("");
-        jTextField_Tamaño_Ventana_Producto.setText("");
-        jTextField_Tipo_De_Producto_Ventana_Producto.setText("");
-        jTextField_Fecha_De_Vencimiento_Ventana_Producto.setText("");
+        jTextField_Codigo_EAN_RegistrarProducto.setText("");
+        jTextField_Nombre_Corto_RegistrarProducto.setText("");
+        jTextField_Nombre_Largo_RegistrarProducto.setText("");
+        jTextField_Descripcion_RegistrarProducto.setText("");
+        jTextField_Precio_Venta_RegistrarProducto.setText("");
+        jTextField_Precio_Compra_RegistrarProducto.setText("");
+        jTextField_Largo_RegistrarProducto.setText("");
+        jTextField_Ancho_RegistrarProducto.setText("");
+        jTextField_Alto_RegistrarProducto.setText("");
+        jTextField_Stock_RegistrarProducto.setText("");
+        jTextField_Categoria_RegistrarProducto.setText("");
+        jTextField_Fecha_De_Vencimiento_RegistrarProducto.setText("");
         //Vaciar textfields
 
     }//GEN-LAST:event_jButton_Guardar_ProductoActionPerformed
@@ -482,18 +426,18 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTextField_Alto_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Ancho_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Categoria_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Codigo_EAN_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Descripcion_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Fecha_De_Vencimiento_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Largo_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Nombre_Corto_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Nombre_Largo_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Precio_Compra_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Precio_Venta_RegistrarProducto;
+    private javax.swing.JTextField jTextField_Stock_RegistrarProducto;
     private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
 
