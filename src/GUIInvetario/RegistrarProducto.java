@@ -366,7 +366,7 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
             return;
         }
         if (jTextField_Stock_RegistrarProducto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Bodeguero.");
+            JOptionPane.showMessageDialog(null, "Debes ingresar Stock.");
             jTextField_Stock_RegistrarProducto.requestFocus();
             return;
         }
@@ -378,7 +378,7 @@ public class RegistrarProducto extends javax.swing.JInternalFrame {
         }
 
         if (jTextField_Fecha_De_Vencimiento_RegistrarProducto.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Debes ingresar un Bodeguero.");
+            JOptionPane.showMessageDialog(null, "Debes ingresar Fecha de vencimiento.");
             jTextField_Fecha_De_Vencimiento_RegistrarProducto.requestFocus();
             return;
         } else {
