@@ -5,12 +5,17 @@
  */
 package GUIInvetario;
 
+import Clases.Registrar_Usuario;
+import java.util.LinkedList;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Roberto
  */
 public class RegistrarUsuario extends javax.swing.JInternalFrame {
-
+    public static LinkedList contenedor = new LinkedList();
+    public int Encontrado;
     /**
      * Creates new form RegistrarUsuario
      */
@@ -27,27 +32,28 @@ public class RegistrarUsuario extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFormattedTextField4 = new javax.swing.JFormattedTextField();
+        jTextField_Correo_RegistrarUsuario = new javax.swing.JFormattedTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jTextField_Nombre_Usuario_RegistrarUsuario = new javax.swing.JFormattedTextField();
         jLabel5 = new javax.swing.JLabel();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        jTextField_Id_Bodega_RegistrarUsuario = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jTextField_Contraseña_RegistrarUsuario = new javax.swing.JPasswordField();
         jLabel7 = new javax.swing.JLabel();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        jTextField_Confirmar_Contraseña_RegistrarUsuario = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
-        jFormattedTextField3 = new javax.swing.JFormattedTextField();
+        jTextField_Cargo_RegistrarUsuario = new javax.swing.JFormattedTextField();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jFormattedTextField5 = new javax.swing.JFormattedTextField();
-        jFormattedTextField6 = new javax.swing.JFormattedTextField();
+        jTextField_Rut_RegistrarUsuario = new javax.swing.JFormattedTextField();
+        jTextField_Nombre_Completo_RegistrarUsuario = new javax.swing.JFormattedTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        Hisotial = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -61,11 +67,22 @@ public class RegistrarUsuario extends javax.swing.JInternalFrame {
 
         jLabel6.setText("ID Bodega:");
 
+        jTextField_Contraseña_RegistrarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_Contraseña_RegistrarUsuarioActionPerformed(evt);
+            }
+        });
+
         jLabel7.setText("Cargo:");
 
         jButton1.setText("Ayuda");
 
         jButton2.setText("Aceptar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Cancelar");
 
@@ -76,6 +93,13 @@ public class RegistrarUsuario extends javax.swing.JInternalFrame {
         jLabel9.setText("Nombre Completo:");
 
         jLabel10.setText("Ingrese Los siguientes datos:");
+
+        Hisotial.setText("Historial");
+        Hisotial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HisotialActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -90,41 +114,43 @@ public class RegistrarUsuario extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel2)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGap(0, 263, Short.MAX_VALUE)
+                                        .addGap(0, 182, Short.MAX_VALUE)
+                                        .addComponent(Hisotial)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jButton3))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(33, 33, 33)
-                                        .addComponent(jFormattedTextField1))))
+                                        .addComponent(jTextField_Nombre_Usuario_RegistrarUsuario))))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addGap(95, 95, 95)
-                                .addComponent(jFormattedTextField3))
+                                .addComponent(jTextField_Cargo_RegistrarUsuario))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addGap(74, 74, 74)
-                                .addComponent(jFormattedTextField2))
+                                .addComponent(jTextField_Id_Bodega_RegistrarUsuario))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
-                                .addComponent(jPasswordField2))
+                                .addComponent(jTextField_Confirmar_Contraseña_RegistrarUsuario))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addGap(68, 68, 68)
-                                .addComponent(jPasswordField1))
+                                .addComponent(jTextField_Contraseña_RegistrarUsuario))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(91, 91, 91)
-                                .addComponent(jFormattedTextField4))
+                                .addComponent(jTextField_Correo_RegistrarUsuario))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel8)
                                 .addGap(107, 107, 107)
-                                .addComponent(jFormattedTextField5))
+                                .addComponent(jTextField_Rut_RegistrarUsuario))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(22, 22, 22)
-                                .addComponent(jFormattedTextField6)))
+                                .addComponent(jTextField_Nombre_Completo_RegistrarUsuario)))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,55 +172,134 @@ public class RegistrarUsuario extends javax.swing.JInternalFrame {
                 .addGap(11, 11, 11)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Nombre_Usuario_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9)
-                    .addComponent(jFormattedTextField6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Nombre_Completo_RegistrarUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jFormattedTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Rut_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(11, 11, 11)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jFormattedTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Correo_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Contraseña_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Confirmar_Contraseña_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField_Id_Bodega_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jFormattedTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                    .addComponent(jTextField_Cargo_RegistrarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
-                    .addComponent(jButton2)))
+                    .addComponent(jButton2)
+                    .addComponent(Hisotial)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        if (jTextField_Nombre_Usuario_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar un nombre de usuario.");
+            jTextField_Nombre_Usuario_RegistrarUsuario.requestFocus();
+            return;
+        }
+
+        if (jTextField_Nombre_Completo_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar su nombre.");
+            jTextField_Nombre_Completo_RegistrarUsuario.requestFocus();
+            return;
+        }
+        if (jTextField_Rut_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar su rut.");
+            jTextField_Rut_RegistrarUsuario.requestFocus();
+            return;
+        }
+
+        if (jTextField_Correo_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar su correo.");
+            jTextField_Correo_RegistrarUsuario.requestFocus();
+            return;
+        }
+
+        if (jTextField_Contraseña_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar su contraseña.");
+            jTextField_Contraseña_RegistrarUsuario.requestFocus();
+            return;
+        }
+
+        if (jTextField_Confirmar_Contraseña_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar nuevamente la contraseña anterior.");
+            jTextField_Confirmar_Contraseña_RegistrarUsuario.requestFocus();
+            return;
+        }
+
+        if (jTextField_Id_Bodega_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar el nombre de la Bodega.");
+            jTextField_Id_Bodega_RegistrarUsuario.requestFocus();
+            return;
+        }
+        if (jTextField_Cargo_RegistrarUsuario.getText().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Debes ingresar Ancho del Prodcuto.");
+            jTextField_Cargo_RegistrarUsuario.requestFocus();
+            return;
+        }else {
+            JOptionPane.showMessageDialog(null, "Registrado con Exito.");
+
+        }
+                
+                String nombre_usuario = jTextField_Nombre_Usuario_RegistrarUsuario.getText();
+                String nombre_completo = jTextField_Nombre_Completo_RegistrarUsuario.getText();
+                String rut = jTextField_Rut_RegistrarUsuario.getText();
+                String correo = jTextField_Correo_RegistrarUsuario.getText();
+                String contraseña = jTextField_Contraseña_RegistrarUsuario.getText();
+                String confirmar_contraseña = jTextField_Confirmar_Contraseña_RegistrarUsuario.getText();
+                String id_bodega = jTextField_Id_Bodega_RegistrarUsuario.getText();
+                String cargo = jTextField_Cargo_RegistrarUsuario.getText();
+
+                Registrar_Usuario clase = new Registrar_Usuario(nombre_usuario, nombre_completo, rut, correo, contraseña, confirmar_contraseña, id_bodega, cargo);
+                contenedor.add(clase);
+
+                jTextField_Nombre_Usuario_RegistrarUsuario.setText("");
+                jTextField_Nombre_Completo_RegistrarUsuario.setText("");
+                jTextField_Rut_RegistrarUsuario.setText("");
+                jTextField_Correo_RegistrarUsuario.setText("");
+                jTextField_Contraseña_RegistrarUsuario.setText("");
+                jTextField_Confirmar_Contraseña_RegistrarUsuario.setText("");
+                jTextField_Id_Bodega_RegistrarUsuario.setText("");
+                jTextField_Cargo_RegistrarUsuario.setText("");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField_Contraseña_RegistrarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_Contraseña_RegistrarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_Contraseña_RegistrarUsuarioActionPerformed
+
+    private void HisotialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HisotialActionPerformed
+        // TODO add your handling code here:
+        Tabla_Productos l = new Tabla_Productos();
+        l.setVisible(true);
+    }//GEN-LAST:event_HisotialActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Hisotial;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
-    private javax.swing.JFormattedTextField jFormattedTextField3;
-    private javax.swing.JFormattedTextField jFormattedTextField4;
-    private javax.swing.JFormattedTextField jFormattedTextField5;
-    private javax.swing.JFormattedTextField jFormattedTextField6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -205,7 +310,13 @@ public class RegistrarUsuario extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField jPasswordField2;
+    private javax.swing.JFormattedTextField jTextField_Cargo_RegistrarUsuario;
+    private javax.swing.JPasswordField jTextField_Confirmar_Contraseña_RegistrarUsuario;
+    private javax.swing.JPasswordField jTextField_Contraseña_RegistrarUsuario;
+    private javax.swing.JFormattedTextField jTextField_Correo_RegistrarUsuario;
+    private javax.swing.JFormattedTextField jTextField_Id_Bodega_RegistrarUsuario;
+    private javax.swing.JFormattedTextField jTextField_Nombre_Completo_RegistrarUsuario;
+    private javax.swing.JFormattedTextField jTextField_Nombre_Usuario_RegistrarUsuario;
+    private javax.swing.JFormattedTextField jTextField_Rut_RegistrarUsuario;
     // End of variables declaration//GEN-END:variables
 }
