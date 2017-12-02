@@ -6,6 +6,7 @@
 package GUIInvetario;
 
 import javax.swing.JOptionPane;
+import static servicios.Conexion.connect;
 
 /**
  *
@@ -19,6 +20,7 @@ public class Ingreso extends javax.swing.JFrame {
     public Ingreso() {
         initComponents();
         setLocationRelativeTo(null);
+        connect();
     }
 
     /**
