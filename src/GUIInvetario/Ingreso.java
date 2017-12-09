@@ -6,7 +6,7 @@
 package GUIInvetario;
 
 import javax.swing.JOptionPane;
-import static servicios.Conexion.connect;
+import static Conexionbd.Conexion.connect;
 
 /**
  *
